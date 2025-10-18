@@ -5,20 +5,11 @@
 #define INF 999999
 
 int main() {
-    int n;
-    scanf("%d", &n);
+    int n = 4;
     
-    int keys[MAX];
-    double p[MAX], q[MAX+1];
-    
-    for(int i = 0; i < n; i++)
-        scanf("%d", &keys[i]);
-    
-    for(int i = 0; i < n; i++)
-        scanf("%lf", &p[i]);
-    
-    for(int i = 0; i <= n; i++)
-        scanf("%lf", &q[i]);
+    int keys[] = {10, 20, 30, 40};
+    double p[] = {0.1, 0.2, 0.4, 0.3};
+    double q[] = {0.05, 0.1, 0.05, 0.05, 0.1};
     
     double e[MAX][MAX], w[MAX][MAX];
     int root[MAX][MAX];
